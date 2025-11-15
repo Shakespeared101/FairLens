@@ -1,0 +1,51 @@
+{
+  "name": "Lei Geral de Proteção de Dados (LGPD)",
+  "jurisdiction": "Brazil",
+  "description": "Brazilian General Data Protection Law",
+  "requirements": [
+    "Legal basis for data processing",
+    "Consent for data collection",
+    "Purpose of data processing",
+    "Data security measures",
+    "Right to access personal data",
+    "Right to correction of data",
+    "Right to deletion of data",
+    "Right to data portability",
+    "Right to information about data sharing",
+    "Right to revoke consent",
+    "Data protection officer designation",
+    "Data breach notification",
+    "International data transfer safeguards",
+    "Children's data protection (under 18)",
+    "Automated decision-making disclosure",
+    "Data retention period",
+    "Data subject rights exercise procedures",
+    "National Data Protection Authority contact"
+  ],
+  "keyPhrases": [
+    "titular dos dados",
+    "consentimento",
+    "base legal",
+    "finalidade",
+    "tratamento de dados",
+    "encarregado",
+    "agentes de tratamento",
+    "controlador",
+    "operador",
+    "autoridade nacional"
+  ],
+  "mandatoryElements": [
+    "Identity of controller",
+    "Contact of data protection officer",
+    "Legal basis for processing",
+    "Purpose of processing",
+    "Data sharing information",
+    "International transfer information",
+    "Security measures",
+    "Retention period",
+    "Data subject rights",
+    "How to exercise rights",
+    "Complaint procedure",
+    "Consent withdrawal procedure"
+  ]
+}

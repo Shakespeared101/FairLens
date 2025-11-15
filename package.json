@@ -1,0 +1,19 @@
+{
+  "name": "watchdogs-privacy-guardian",
+  "version": "1.0.0",
+  "description": "Cross-browser extension for detecting dark patterns and analyzing privacy policies",
+  "main": "src/background/background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "privacy",
+    "dark-patterns",
+    "browser-extension",
+    "policy-compliance"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}

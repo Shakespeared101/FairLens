@@ -1,0 +1,76 @@
+{
+  "extension": {
+    "name": "WatchDogs - Privacy Guardian",
+    "version": "1.0.0",
+    "description": "Detect dark patterns, check policy compliance, and summarize privacy policies"
+  },
+  "features": {
+    "darkPatternDetection": {
+      "enabled": true,
+      "autoDetect": false,
+      "highlightColor": "#ef4444",
+      "highlightOpacity": 0.1,
+      "notificationsEnabled": true
+    },
+    "policyCompliance": {
+      "enabled": true,
+      "defaultRegulation": "gdpr",
+      "supportedRegulations": [
+        "gdpr",
+        "ccpa",
+        "pipeda",
+        "lgpd"
+      ]
+    },
+    "policySummarizer": {
+      "enabled": true,
+      "defaultModel": "llama-3.3-70b-versatile",
+      "maxTokens": 2000,
+      "temperature": 0.2
+    }
+  },
+  "api": {
+    "groq": {
+      "baseUrl": "https://api.groq.com/openai/v1",
+      "models": {
+        "default": "llama-3.3-70b-versatile",
+        "alternatives": [
+          "llama-3.1-70b-versatile",
+          "llama-3.1-8b-instant",
+          "gemma2-9b-it"
+        ]
+      },
+      "rateLimit": {
+        "requestsPerMinute": 30,
+        "requestsPerDay": 14400
+      }
+    }
+  },
+  "ui": {
+    "theme": {
+      "primary": "#6366f1",
+      "secondary": "#8b5cf6",
+      "success": "#10b981",
+      "warning": "#f59e0b",
+      "danger": "#ef4444",
+      "background": "#0f172a"
+    },
+    "animations": {
+      "enabled": true,
+      "duration": 300
+    }
+  },
+  "privacy": {
+    "dataCollection": false,
+    "analytics": false,
+    "telemetry": false,
+    "storeApiKeysLocally": true
+  },
+  "advanced": {
+    "debugMode": false,
+    "verboseLogging": false,
+    "cacheAnalysisResults": true,
+    "maxCacheEntries": 50,
+    "contextMenuIntegration": true
+  }
+}

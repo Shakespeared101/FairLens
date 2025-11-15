@@ -1,0 +1,46 @@
+{
+  "name": "Personal Information Protection and Electronic Documents Act (PIPEDA)",
+  "jurisdiction": "Canada",
+  "description": "Canadian federal privacy law for private-sector organizations",
+  "requirements": [
+    "Accountability for personal information",
+    "Identifying purposes for collection",
+    "Obtaining consent for collection, use, or disclosure",
+    "Limiting collection to necessary information",
+    "Limiting use, disclosure, and retention",
+    "Ensuring accuracy of information",
+    "Safeguarding personal information",
+    "Openness about policies and practices",
+    "Individual access to personal information",
+    "Challenging compliance procedures",
+    "Consent withdrawal mechanism",
+    "Breach notification to individuals",
+    "Breach notification to Privacy Commissioner",
+    "Record keeping of breaches",
+    "Cross-border transfer disclosure"
+  ],
+  "keyPhrases": [
+    "consent",
+    "personal information",
+    "accountability",
+    "safeguards",
+    "accuracy",
+    "individual access",
+    "privacy officer",
+    "reasonable purposes",
+    "knowledge and consent"
+  ],
+  "mandatoryElements": [
+    "Purposes of collection identified",
+    "Consent mechanism described",
+    "Limitation on collection stated",
+    "Use and disclosure limitations",
+    "Retention period specified",
+    "Accuracy procedures",
+    "Security safeguards described",
+    "Privacy practices disclosed",
+    "Access request procedure",
+    "Complaint procedure",
+    "Privacy officer contact"
+  ]
+}

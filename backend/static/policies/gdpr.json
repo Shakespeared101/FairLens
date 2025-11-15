@@ -1,0 +1,46 @@
+{
+  "name": "General Data Protection Regulation (GDPR)",
+  "jurisdiction": "European Union",
+  "description": "EU regulation on data protection and privacy for individuals within the EU and EEA",
+  "requirements": [
+    "Right to access personal data",
+    "Right to erasure (right to be forgotten)",
+    "Right to rectification of inaccurate data",
+    "Right to data portability",
+    "Right to object to processing",
+    "Right to restrict processing",
+    "Clear consent mechanism",
+    "Data protection officer contact",
+    "Breach notification procedures",
+    "Legitimate interest assessment",
+    "Third party data sharing disclosure",
+    "International data transfer safeguards",
+    "Data retention period",
+    "Purpose limitation",
+    "Data minimization principle",
+    "Automated decision-making disclosure",
+    "Children's data protection (under 16)",
+    "Legal basis for processing"
+  ],
+  "keyPhrases": [
+    "lawful basis",
+    "data subject rights",
+    "controller",
+    "processor",
+    "consent",
+    "legitimate interest",
+    "special categories of data",
+    "supervisory authority"
+  ],
+  "mandatoryElements": [
+    "Identity and contact details of controller",
+    "Contact details of data protection officer",
+    "Purposes of processing",
+    "Legal basis for processing",
+    "Recipients of personal data",
+    "Retention period",
+    "Data subject rights information",
+    "Right to withdraw consent",
+    "Right to lodge complaint"
+  ]
+}

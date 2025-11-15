@@ -1,0 +1,46 @@
+{
+  "name": "California Consumer Privacy Act (CCPA)",
+  "jurisdiction": "California, USA",
+  "description": "California state law enhancing privacy rights and consumer protection",
+  "requirements": [
+    "Right to know what personal information is collected",
+    "Right to know if personal information is sold or disclosed",
+    "Right to opt-out of sale of personal information",
+    "Right to delete personal information",
+    "Right to non-discrimination for exercising rights",
+    "Categories of personal information collected",
+    "Categories of sources of information",
+    "Business or commercial purpose for collection",
+    "Categories of third parties sharing information",
+    "Specific pieces of information collected",
+    "Do Not Sell My Personal Information link",
+    "Sale of minors' information (under 16)",
+    "Financial incentive disclosure",
+    "Methods for submitting requests",
+    "Response timeline (45 days)",
+    "Verification process description"
+  ],
+  "keyPhrases": [
+    "personal information",
+    "sell",
+    "share",
+    "business purpose",
+    "commercial purpose",
+    "service provider",
+    "third party",
+    "consumer rights",
+    "opt-out",
+    "do not sell"
+  ],
+  "mandatoryElements": [
+    "Categories of personal information collected",
+    "Sources of personal information",
+    "Purpose of collection",
+    "Categories shared with third parties",
+    "Right to opt-out of sales",
+    "Right to deletion",
+    "Right to non-discrimination",
+    "How to exercise rights",
+    "Contact information for privacy inquiries"
+  ]
+}
