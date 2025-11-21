@@ -83,7 +83,9 @@ FairLens does not access other tabs, does not monitor browsing behavior, and doe
 
 ## 5. Remote Resources (If Enabled)
 
-If remote rule updates are used, FairLens may retrieve updated pattern-detection definitions from a trusted source. This fetch mechanism:
+If remote rule updates are used, FairLens may retrieve updated pattern-detection definitions from a trusted source.
+
+This fetch mechanism:
 
 * Retrieves only detection rules, not user data
 * Sends no data from your browsing to external servers
@@ -120,4 +122,4 @@ If this policy changes, we will update the "Last Updated" date and publish the r
 ## 9. Contact
 
 For questions or concerns, contact:
-**Email:** shakthi3203@gmail.com
+**Email:** [shakthi3203@gmail.com](mailto:shakthi3203@gmail.com)
