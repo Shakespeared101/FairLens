@@ -42,6 +42,22 @@ document.addEventListener('DOMContentLoaded', function() {
         try {
             const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
 
+            // Check if AI detection is enabled
+            const useAI = document.getElementById('useAIDetection').checked;
+
+            // Get API key if AI is enabled
+            let apiKey = null;
+            if (useAI) {
+                const result = await chrome.storage.local.get(['groqApiKey']);
+                apiKey = result.groqApiKey;
+
+                if (!apiKey) {
+                    setButtonLoading(highlightBtn, false);
+                    showStatus('highlightStatus', 'AI detection requires API key. Please set it in API Settings.', 'error');
+                    return;
+                }
+            }
+
             // First, try to ensure content script is injected
             try {
                 await chrome.scripting.executeScript({
@@ -56,7 +72,14 @@ document.addEventListener('DOMContentLoaded', function() {
             // Small delay to ensure script is ready
             await new Promise(resolve => setTimeout(resolve, 100));
 
-            chrome.tabs.sendMessage(tab.id, { action: 'highlightDarkPatterns' }, function(response) {
+            // Send message with AI detection flag and API key
+            const message = {
+                action: 'highlightDarkPatterns',
+                useAI: useAI,
+                apiKey: apiKey
+            };
+
+            chrome.tabs.sendMessage(tab.id, message, function(response) {
                 setButtonLoading(highlightBtn, false);
 
                 if (chrome.runtime.lastError) {
@@ -66,10 +89,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
 
                 if (response && response.success) {
-                    showStatus('highlightStatus', `Found ${response.count} dark patterns`, 'success');
+                    let statusMsg = `Found ${response.count} dark patterns`;
+
+                    // Show detection method breakdown if AI was used
+                    if (useAI && response.methods) {
+                        statusMsg += ` (Pattern: ${response.methods.pattern}, Semantic: ${response.methods.semantic}, AI: ${response.methods.ai})`;
+                    }
+
+                    showStatus('highlightStatus', statusMsg, 'success');
 
                     if (response.count > 0) {
-                        displayResults('Dark Patterns Detected', formatDarkPatternsResults(response.patterns));
+                        displayResults('Dark Patterns Detected', formatDarkPatternsResults(response.patterns, useAI));
                     }
                 } else {
                     showStatus('highlightStatus', 'No dark patterns detected', 'warning');
@@ -222,7 +252,7 @@ document.addEventListener('DOMContentLoaded', function() {
         resultsPanel.style.display = 'block';
     }
 
-    function formatDarkPatternsResults(patterns) {
+    function formatDarkPatternsResults(patterns, useAI = false) {
         let html = '<div>';
 
         html += `<div style="background: rgba(239, 68, 68, 0.1); padding: 12px; border-radius: 8px; margin-bottom: 16px; border-left: 3px solid #ef4444;">
@@ -231,13 +261,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Explanation of dark patterns
         html += `<div style="background: rgba(99, 102, 241, 0.1); padding: 12px; border-radius: 8px; margin: 12px 0; font-size: 12px;">
-            <strong>ℹ️ What are Dark Patterns?</strong><br>
-            Dark patterns are deceptive UI/UX techniques that trick users into doing things they didn't intend to do,
-            like signing up for subscriptions, sharing data, or making purchases. The extension scans for 10 types
-            including false urgency, confirmshaming, hidden costs, and pre-checked consent boxes.
+            <strong>ℹ️ ${useAI ? 'AI-Enhanced' : 'Pattern-Based'} Detection</strong><br>
+            ${useAI ?
+                'Using hybrid detection: pattern matching + semantic similarity + AI verification. Patterns are scored by confidence (60-100%).' :
+                'Using pattern matching to detect deceptive UI/UX techniques. Enable AI detection for more comprehensive analysis.'
+            }
         </div>`;
 
-        // Group patterns by type
+        // Group patterns by type and method if AI
         const patternsByType = {};
         patterns.forEach((pattern) => {
             if (!patternsByType[pattern.type]) {
@@ -250,16 +281,44 @@ document.addEventListener('DOMContentLoaded', function() {
         html += '<ul style="line-height: 1.8;">';
 
         Object.keys(patternsByType).forEach(type => {
-            const count = patternsByType[type].length;
-            const description = patternsByType[type][0].description;
-            html += `<li><strong style="color: #ef4444;">${type}</strong> (${count}x): ${description}</li>`;
+            const typePatterns = patternsByType[type];
+            const count = typePatterns.length;
+            const description = typePatterns[0].description;
+
+            // Calculate average confidence if AI was used
+            let avgConfidence = null;
+            if (useAI && typePatterns[0].confidence !== undefined) {
+                avgConfidence = typePatterns.reduce((sum, p) => sum + (p.confidence || 1.0), 0) / count;
+            }
+
+            // Show detection method breakdown if AI was used
+            let methodInfo = '';
+            if (useAI) {
+                const methods = typePatterns.map(p => p.method || 'pattern');
+                const methodCounts = {};
+                methods.forEach(m => methodCounts[m] = (methodCounts[m] || 0) + 1);
+
+                const methodLabels = {
+                    pattern: '🔍',
+                    semantic: '🧠',
+                    ai: '🤖'
+                };
+
+                methodInfo = ' [' + Object.entries(methodCounts)
+                    .map(([method, count]) => `${methodLabels[method] || ''}${count}`)
+                    .join(' ') + ']';
+            }
+
+            const confidenceInfo = avgConfidence ? ` <span style="color: #10b981; font-size: 11px;">(${Math.round(avgConfidence * 100)}% confidence)</span>` : '';
+
+            html += `<li><strong style="color: #ef4444;">${type}</strong> (${count}x)${methodInfo}${confidenceInfo}: ${description}</li>`;
         });
 
         html += '</ul>';
 
         html += `<div style="margin-top: 16px; padding: 12px; background: rgba(15, 23, 42, 0.5); border-radius: 8px; font-size: 13px;">
-            <strong>👁️ Visual Highlighting:</strong> All detected patterns are now highlighted in red on the page.
-            Hover over highlighted elements to see detailed explanations.
+            <strong>👁️ Visual Highlighting:</strong> All detected patterns are highlighted on the page.
+            ${useAI ? 'Hover to see confidence scores and detection methods.' : 'Hover for detailed explanations.'}
         </div>`;
 
         html += '</div>';
