@@ -1,8 +1,8 @@
-# WatchDogs - Privacy Guardian Browser Extension
+# FairLens - Privacy Guardian Browser Extension
 
 ![WatchDogs Logo](assets/icons/icon128.png)
 
-**WatchDogs** is a cross-browser extension designed to protect users from dark patterns and help them understand privacy policies. It provides three powerful features to enhance your online privacy and awareness.
+**FairLens** is a cross-browser extension designed to protect users from dark patterns and help them understand privacy policies. It provides three powerful features to enhance your online privacy and awareness.
 
 ## Features
 
