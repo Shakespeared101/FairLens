@@ -1,0 +1,123 @@
+# FairLens Privacy Policy
+
+**Last Updated:** November 21, 2025
+
+FairLens is a browser extension designed to help users identify dark patterns, misleading interface elements, and privacy-related risks on websites they visit. FairLens operates with a single purpose: analyzing the current webpage to highlight manipulative UX patterns and improve user transparency.
+
+This privacy policy explains what data FairLens processes and how it is handled.
+
+---
+
+## 1. Information We Collect
+
+FairLens does not collect, store, transmit, or sell any personal information.
+
+FairLens does not collect:
+
+* Personally identifiable information
+* Financial or payment information
+* Authentication information
+* Health information
+* Emails, messages, or other personal communications
+* Location data
+* Browsing history across sites
+* User activity such as clicks, keystrokes, mouse movements, or input
+* Content from pages you visit except what is required for local analysis
+
+### Website Content (Processed Locally)
+
+To detect dark patterns, FairLens analyzes the content of the webpage that is currently open in your browser. This processing happens entirely on your device and is not stored, logged, or transmitted.
+
+No webpage data ever leaves your browser.
+
+---
+
+## 2. How Information Is Used
+
+FairLens processes webpage elements locally to:
+
+* Identify common dark patterns
+* Highlight potentially misleading UI components
+* Provide transparency indicators and explanations
+* Improve on-page analysis performance using cached rules
+
+All processing is confined to the extension’s core functionality and single purpose.
+
+---
+
+## 3. Data Storage
+
+FairLens uses Chrome’s storage API only to store:
+
+* User settings (e.g., which checks are enabled or disabled)
+* Cached pattern-detection rules
+
+No personal or identifiable data is stored.
+All stored data remains on the user’s device and can be cleared at any time.
+
+---
+
+## 4. Permissions
+
+FairLens requests only the minimum permissions required to perform its single purpose:
+
+### activeTab
+
+Allows FairLens to analyze the currently active webpage only when triggered by user interaction.
+
+### Host Permissions
+
+Allows the extension to run on user-visited websites to detect dark patterns. Only the page being viewed is inspected; nothing else is accessed.
+
+### scripting
+
+Used to inject the code necessary to analyze and highlight elements on the current page.
+
+### storage
+
+Used only for local settings and cached rule data.
+
+FairLens does not access other tabs, does not monitor browsing behavior, and does not collect background data.
+
+---
+
+## 5. Remote Resources (If Enabled)
+
+If remote rule updates are used, FairLens may retrieve updated pattern-detection definitions from a trusted source. This fetch mechanism:
+
+* Retrieves only detection rules, not user data
+* Sends no data from your browsing to external servers
+* Never transmits webpage content or personal information
+
+If you are not using remote code, delete this section.
+
+---
+
+## 6. Data Sharing
+
+FairLens:
+
+* Does NOT share, sell, or transfer any user or webpage data to third parties
+* Does NOT use data for advertising, marketing, analytics, or tracking
+* Does NOT use data for creditworthiness or lending decisions
+
+No data leaves the user’s device.
+
+---
+
+## 7. Children’s Privacy
+
+FairLens does not target children and does not collect any information from users of any age.
+
+---
+
+## 8. Changes to This Policy
+
+If this policy changes, we will update the "Last Updated" date and publish the revised policy on our website or extension listing.
+
+---
+
+## 9. Contact
+
+For questions or concerns, contact:
+**Email:** shakthi3203@gmail.com
