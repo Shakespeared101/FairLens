@@ -3,7 +3,7 @@
 ![WatchDogs Logo](assets/icons/icon128.png)
 
 **FairLens** is a cross-browser extension designed to protect users from dark patterns and help them understand privacy policies. It provides three powerful features to enhance your online privacy and awareness.
-[Privacy Policy](docs/privacy-policy.md)
+[Privacy Policy](docs/Privacy_Policy.md)
 
 ## Features
 
