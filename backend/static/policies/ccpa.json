@@ -1,27 +1,88 @@
 {
   "name": "California Consumer Privacy Act (CCPA)",
-  "jurisdiction": "California, USA",
-  "description": "California state law enhancing privacy rights and consumer protection",
+  "officialName": "California Civil Code §§ 1798.100-1798.199",
+  "jurisdiction": "California, United States",
+  "effectiveDate": "2020-01-01",
+  "lastAmended": "2023-01-01 (CPRA amendments)",
+  "description": "California state law enhancing privacy rights and consumer protection for California residents",
+  "officialSources": [
+    "https://oag.ca.gov/privacy/ccpa",
+    "https://cppa.ca.gov/regulations/",
+    "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=3.&part=4.&lawCode=CIV&title=1.81.5"
+  ],
+  "applicabilityThresholds": {
+    "grossRevenue": "$25.625 million or more (as of January 1, 2025)",
+    "dataVolume": "Buy, sell, or share personal information of 100,000+ CA residents or households",
+    "revenueFromSales": "Derive 50%+ of annual revenue from selling or sharing CA residents' personal information"
+  },
+  "keySections": {
+    "§1798.100": "Consumer's right to know what personal information is collected",
+    "§1798.105": "Consumer's right to deletion",
+    "§1798.110": "Right to know categories and specific pieces of information collected",
+    "§1798.115": "Right to know categories of personal information sold or disclosed",
+    "§1798.120": "Right to opt-out of sale of personal information",
+    "§1798.121": "Right to limit use of sensitive personal information",
+    "§1798.125": "Right to non-discrimination for exercising CCPA rights",
+    "§1798.130": "Notice, disclosure, and opt-out requirements",
+    "§1798.135": "Methods for submitting requests and opt-out requirements"
+  },
   "requirements": [
+    "Categories of personal information collected in preceding 12 months",
+    "Categories of sources from which personal information is collected",
+    "Business or commercial purpose for collecting or selling personal information",
+    "Categories of third parties with whom business shares personal information",
+    "Categories of personal information disclosed for business purpose",
+    "Categories of personal information sold or shared",
     "Right to know what personal information is collected",
-    "Right to know if personal information is sold or disclosed",
-    "Right to opt-out of sale of personal information",
+    "Right to know whether personal information is sold or shared",
+    "Right to opt-out of sale or sharing of personal information",
+    "Right to limit use and disclosure of sensitive personal information",
     "Right to delete personal information",
-    "Right to non-discrimination for exercising rights",
+    "Right to correct inaccurate personal information",
+    "Right to non-discrimination for exercising CCPA rights",
+    "Specific pieces of personal information collected about consumer",
+    "Do Not Sell or Share My Personal Information link (if applicable)",
+    "Limit the Use of My Sensitive Personal Information link (if applicable)",
+    "Sale or sharing of personal information of consumers under 16 years",
+    "Financial incentive disclosure (if offered)",
+    "Two or more designated methods for submitting requests",
+    "Toll-free telephone number (or email if online-only business)",
+    "Response timeline of 45 calendar days (with possible 45-day extension)",
+    "Verification process description for requests",
+    "How to appeal denial of consumer request",
+    "Retention period for personal information",
+    "Notice at collection of personal information",
+    "Privacy policy update date",
+    "Contact information for privacy inquiries"
+  ],
+  "consumerRights": [
+    "Right to Know (categories and specific pieces)",
+    "Right to Delete",
+    "Right to Opt-Out of Sale/Sharing",
+    "Right to Correct",
+    "Right to Limit Use of Sensitive Personal Information",
+    "Right to Non-Discrimination"
+  ],
+  "mandatoryElements": [
     "Categories of personal information collected",
-    "Categories of sources of information",
-    "Business or commercial purpose for collection",
-    "Categories of third parties sharing information",
-    "Specific pieces of information collected",
-    "Do Not Sell My Personal Information link",
-    "Sale of minors' information (under 16)",
-    "Financial incentive disclosure",
-    "Methods for submitting requests",
-    "Response timeline (45 days)",
-    "Verification process description"
+    "Sources of personal information",
+    "Purpose of collection and use",
+    "Categories of third parties receiving data",
+    "Notice of right to opt-out of sales/sharing",
+    "Notice of right to limit sensitive personal information use",
+    "Right to deletion disclosure",
+    "Right to correction disclosure",
+    "Right to non-discrimination disclosure",
+    "Methods to exercise rights (minimum 2)",
+    "Verification process description",
+    "Response timeframe (45 days)",
+    "Contact information for privacy requests",
+    "Notice at collection requirements",
+    "Financial incentive disclosure (if applicable)"
   ],
   "keyPhrases": [
     "personal information",
+    "sensitive personal information",
     "sell",
     "share",
     "business purpose",
@@ -30,17 +91,34 @@
     "third party",
     "consumer rights",
     "opt-out",
-    "do not sell"
+    "do not sell",
+    "do not share",
+    "right to know",
+    "right to delete",
+    "right to correct",
+    "non-discrimination"
   ],
-  "mandatoryElements": [
-    "Categories of personal information collected",
-    "Sources of personal information",
-    "Purpose of collection",
-    "Categories shared with third parties",
-    "Right to opt-out of sales",
-    "Right to deletion",
-    "Right to non-discrimination",
-    "How to exercise rights",
-    "Contact information for privacy inquiries"
-  ]
+  "sensitivePersonalInformation": [
+    "Social security, driver's license, state ID, or passport number",
+    "Account log-in, financial account, debit card, or credit card number with access code",
+    "Precise geolocation",
+    "Racial or ethnic origin, religious or philosophical beliefs, or union membership",
+    "Contents of mail, email, and text messages (unless business is intended recipient)",
+    "Genetic data",
+    "Biometric information for unique identification",
+    "Health information",
+    "Sex life or sexual orientation information"
+  ],
+  "specialConsiderations": {
+    "minors": "Opt-in consent required for sale/sharing of data for consumers under 16",
+    "requests": "Consumers may submit requests up to twice per year, free of charge",
+    "verification": "Reasonable verification methods required to confirm consumer identity",
+    "penalties": "Up to $7,988 per intentional violation (as of 2025)",
+    "cpraEnhancements": "California Privacy Rights Act (CPRA) amendments effective January 1, 2023",
+    "enforcement": "California Privacy Protection Agency (CPPA) enforces violations"
+  },
+  "recentUpdates": {
+    "effectiveDate": "2026-01-01",
+    "description": "Updated CCPA regulations approved September 2025 covering cybersecurity audits, risk assessments, and automated decision-making technology"
+  }
 }

@@ -1,23 +1,175 @@
 {
   "name": "Personal Information Protection and Electronic Documents Act (PIPEDA)",
-  "jurisdiction": "Canada",
-  "description": "Canadian federal privacy law for private-sector organizations",
+  "officialName": "PIPEDA - S.C. 2000, c. 5",
+  "jurisdiction": "Canada (Federal)",
+  "effectiveDate": "2001-01-01",
+  "description": "Canadian federal privacy law governing how private-sector organizations collect, use, and disclose personal information in commercial activities",
+  "officialSources": [
+    "https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/",
+    "https://laws-lois.justice.gc.ca/eng/acts/P-8.6/",
+    "https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/p_principle/"
+  ],
+  "legalFramework": "Schedule 1 contains the 10 Fair Information Principles that form the foundation of PIPEDA",
+  "tenFairInformationPrinciples": {
+    "Principle 1": {
+      "name": "Accountability",
+      "description": "An organization is responsible for personal information under its control and shall designate an individual accountable for compliance",
+      "requirements": [
+        "Designate individual(s) accountable for PIPEDA compliance",
+        "Ensure compliance procedures are in place",
+        "Make organization's privacy policies and practices available",
+        "Develop complaint handling procedures",
+        "Train staff on privacy policies",
+        "Implement procedures to protect personal information"
+      ]
+    },
+    "Principle 2": {
+      "name": "Identifying Purposes",
+      "description": "Organizations must identify the purposes for collecting personal information before or at the time of collection",
+      "requirements": [
+        "Identify purposes before or at time of collection",
+        "Document purposes for which information is collected",
+        "Communicate purposes to individuals",
+        "Specify new purposes before using information for those purposes"
+      ]
+    },
+    "Principle 3": {
+      "name": "Consent",
+      "description": "Knowledge and consent of the individual required for collection, use, or disclosure of personal information",
+      "requirements": [
+        "Obtain meaningful consent for collection, use, and disclosure",
+        "Make consent requirements clear and understandable",
+        "Allow individuals to withdraw consent (subject to legal restrictions)",
+        "Specify appropriate form of consent (implied, express, opt-in, opt-out)",
+        "Obtain consent before or at time of collection",
+        "Describe consequences of refusing or withdrawing consent"
+      ]
+    },
+    "Principle 4": {
+      "name": "Limiting Collection",
+      "description": "Collection of personal information must be limited to that which is necessary for identified purposes",
+      "requirements": [
+        "Limit collection to information necessary for identified purposes",
+        "Collect information by fair and lawful means",
+        "Avoid excessive or unnecessary data collection",
+        "Explain why specific information is needed"
+      ]
+    },
+    "Principle 5": {
+      "name": "Limiting Use, Disclosure and Retention",
+      "description": "Personal information shall not be used or disclosed for purposes other than those identified, except with consent or as required by law",
+      "requirements": [
+        "Use or disclose only for identified purposes",
+        "Retain only as long as necessary for fulfillment of purposes",
+        "Establish retention periods and guidelines",
+        "Destroy, erase, or anonymize information no longer needed",
+        "Obtain consent for new uses or disclosures",
+        "Document retention and destruction policies"
+      ]
+    },
+    "Principle 6": {
+      "name": "Accuracy",
+      "description": "Personal information shall be as accurate, complete, and up-to-date as necessary for identified purposes",
+      "requirements": [
+        "Ensure accuracy of information used for decisions",
+        "Update information when necessary",
+        "Allow individuals to challenge accuracy",
+        "Correct inaccurate or incomplete information",
+        "Minimize use of outdated information",
+        "Send corrected information to third parties where appropriate"
+      ]
+    },
+    "Principle 7": {
+      "name": "Safeguards",
+      "description": "Personal information must be protected by security safeguards appropriate to the sensitivity of the information",
+      "requirements": [
+        "Protect personal information against loss or theft",
+        "Protect against unauthorized access, disclosure, copying, use, or modification",
+        "Use appropriate safeguards based on sensitivity, amount, distribution, format, and storage method",
+        "Protect information regardless of format",
+        "Use physical, organizational, and technological measures",
+        "Train employees on security measures",
+        "Use care when disposing or destroying information"
+      ]
+    },
+    "Principle 8": {
+      "name": "Openness",
+      "description": "Organizations must make information about policies and practices available to individuals",
+      "requirements": [
+        "Make privacy policies and practices publicly available",
+        "Make information readily understandable and accessible",
+        "Provide information about complaint procedures",
+        "Name or title of person accountable for compliance",
+        "Means of gaining access to personal information",
+        "Description of type of information held and general purposes",
+        "Explain policies about retention and destruction",
+        "Make information available in multiple formats if appropriate"
+      ]
+    },
+    "Principle 9": {
+      "name": "Individual Access",
+      "description": "Upon request, individuals must be informed of the existence, use, and disclosure of their personal information and given access to it",
+      "requirements": [
+        "Provide access to personal information upon request",
+        "Inform individual of existence, use, and disclosure of information",
+        "Allow individual to challenge accuracy and completeness",
+        "Respond to access requests within 30 days (or notify of extension)",
+        "Provide access at minimal or no cost",
+        "Provide information in understandable form",
+        "Explain any denial and allow individual to challenge denial",
+        "Include sources and third parties to whom information was disclosed"
+      ]
+    },
+    "Principle 10": {
+      "name": "Challenging Compliance",
+      "description": "Individuals can challenge an organization's compliance with PIPEDA principles",
+      "requirements": [
+        "Establish procedures to receive and respond to complaints",
+        "Investigate all complaints",
+        "Inform individual of complaint investigation outcome",
+        "Take appropriate measures if complaint is justified",
+        "Document all complaints and resolutions",
+        "Make complaint procedures simple and accessible",
+        "Provide information about recourse to Privacy Commissioner"
+      ]
+    }
+  },
   "requirements": [
-    "Accountability for personal information",
-    "Identifying purposes for collection",
-    "Obtaining consent for collection, use, or disclosure",
-    "Limiting collection to necessary information",
-    "Limiting use, disclosure, and retention",
-    "Ensuring accuracy of information",
-    "Safeguarding personal information",
+    "Accountability - Designate individual responsible for PIPEDA compliance",
+    "Identifying purposes for collection before or at time of collection",
+    "Obtaining meaningful consent for collection, use, or disclosure",
+    "Limiting collection to necessary information only",
+    "Limiting use, disclosure, and retention to identified purposes",
+    "Ensuring accuracy of personal information",
+    "Safeguarding personal information with appropriate security",
     "Openness about policies and practices",
-    "Individual access to personal information",
-    "Challenging compliance procedures",
+    "Providing individual access to personal information upon request",
+    "Establishing procedures for challenging compliance",
     "Consent withdrawal mechanism",
-    "Breach notification to individuals",
-    "Breach notification to Privacy Commissioner",
-    "Record keeping of breaches",
-    "Cross-border transfer disclosure"
+    "Breach notification to affected individuals (mandatory as of November 2018)",
+    "Breach notification to Privacy Commissioner of Canada",
+    "Record keeping of privacy breaches",
+    "Cross-border transfer disclosure and safeguards",
+    "Privacy officer or designated contact information",
+    "Retention and destruction policies",
+    "Response to access requests within 30 days",
+    "Complaint handling procedures",
+    "Third-party service provider oversight"
+  ],
+  "mandatoryElements": [
+    "Privacy officer or accountable person designation",
+    "Purposes of collection clearly identified",
+    "Consent mechanism described",
+    "Limitation on collection explained",
+    "Use and disclosure limitations stated",
+    "Retention period or guidelines specified",
+    "Accuracy maintenance procedures",
+    "Security safeguards described",
+    "Privacy policies and practices disclosed",
+    "Individual access request procedure",
+    "Complaint and challenge procedure",
+    "Breach notification procedures (since 2018)",
+    "Contact information for privacy inquiries"
   ],
   "keyPhrases": [
     "consent",
@@ -28,19 +180,25 @@
     "individual access",
     "privacy officer",
     "reasonable purposes",
-    "knowledge and consent"
+    "knowledge and consent",
+    "fair and lawful means",
+    "limiting collection",
+    "limiting use",
+    "limiting disclosure",
+    "breach notification",
+    "Privacy Commissioner"
   ],
-  "mandatoryElements": [
-    "Purposes of collection identified",
-    "Consent mechanism described",
-    "Limitation on collection stated",
-    "Use and disclosure limitations",
-    "Retention period specified",
-    "Accuracy procedures",
-    "Security safeguards described",
-    "Privacy practices disclosed",
-    "Access request procedure",
-    "Complaint procedure",
-    "Privacy officer contact"
-  ]
+  "specialConsiderations": {
+    "breaches": "Mandatory breach reporting to Privacy Commissioner and affected individuals (effective November 1, 2018)",
+    "breachRecords": "Organizations must maintain records of all privacy breaches",
+    "consent": "Consent must be meaningful - organizations cannot make consent a condition of service if information is not required",
+    "provincialLaws": "Substantially similar provincial laws (e.g., Alberta PIPA, BC PIPA) may apply instead of PIPEDA",
+    "enforcement": "Privacy Commissioner of Canada investigates complaints and can publicize findings",
+    "penalties": "Federal Court can award damages for PIPEDA violations"
+  },
+  "exemptions": {
+    "employeeRecords": "Employee personal information may be exempt in some provinces",
+    "journalistic": "Journalistic, artistic, or literary purposes may be exempt",
+    "legallyRequired": "Disclosure required by law or court order is permitted"
+  }
 }
