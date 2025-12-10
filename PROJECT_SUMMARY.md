@@ -2,7 +2,7 @@
 
 ## Overview
 
-**WatchDogs - Privacy Guardian** is a cross-browser extension designed to protect users from dark patterns and help them understand privacy policies through three core features:
+**WatchDogs - Privacy Guardian** (FairLens) is a cross-browser extension designed to protect users from dark patterns and help them understand privacy policies through three core features:
 
 1. **Dark Pattern Detection** - Identifies and highlights deceptive UI elements
 2. **Policy Compliance Checker** - Analyzes policies against regulations (GDPR, CCPA, PIPEDA, LGPD)
